@@ -14,6 +14,7 @@
 		504077F41AFC06120051EE30 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504077F31AFC06120051EE30 /* Images.xcassets */; };
 		504077F71AFC06120051EE30 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504077F51AFC06120051EE30 /* LaunchScreen.xib */; };
 		504078031AFC06120051EE30 /* FANWarningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 504078021AFC06120051EE30 /* FANWarningTests.m */; };
+		5040780D1AFC061A0051EE30 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5040780C1AFC061A0051EE30 /* FBAudienceNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		504077FC1AFC06120051EE30 /* FANWarningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FANWarningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		504078011AFC06120051EE30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		504078021AFC06120051EE30 /* FANWarningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FANWarningTests.m; sourceTree = "<group>"; };
+		5040780C1AFC061A0051EE30 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5040780D1AFC061A0051EE30 /* FBAudienceNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 		504077E51AFC06120051EE30 /* FANWarning */ = {
 			isa = PBXGroup;
 			children = (
+				5040780C1AFC061A0051EE30 /* FBAudienceNetwork.framework */,
 				504077EA1AFC06120051EE30 /* AppDelegate.h */,
 				504077EB1AFC06120051EE30 /* AppDelegate.m */,
 				504077ED1AFC06120051EE30 /* ViewController.h */,
@@ -347,6 +351,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FANWarning",
+				);
 				INFOPLIST_FILE = FANWarning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +365,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FANWarning",
+				);
 				INFOPLIST_FILE = FANWarning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
